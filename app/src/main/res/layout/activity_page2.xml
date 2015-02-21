@@ -9,11 +9,8 @@
 
     <TextView android:text=
         "You are able to add images by dragging any image from a folder, and dropping it into the 'drawable' folder.
-
-    Note that you should name the file properly: no spaces, and use only lowercase letters and underscores '_'s (no hyphens)
-
-    After adding the image to your project, drag and drop an 'ImageView' in the gui, and set the 'src' (in the bottom right hand panel) to the name of the image (use the '...' visible when you click on the space to the right of 'src').
-    "
+\n\n Note that you should name the file properly: no spaces, and use only lowercase letters and underscores '_'s (no hyphens)
+\n\n After adding the image to your project, drag and drop an 'ImageView' in the gui, and set the 'src' (in the bottom right hand panel) to the name of the image (use the '...' visible when you click on the space to the right of 'src'). "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"

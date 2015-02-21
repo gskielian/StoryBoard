@@ -22,8 +22,8 @@
         android:text=
             "
   One cool thing to do is to have buttons (or any 'View' element) point to a website when it is clicked
-  See the code for this page (Page 3) for the basic syntax.
-  Remember that all the code will be on the GitHub 'Intent-Superpowers' and 'Buttons' Links
+  \n\nSee the code for this page (Page 3) for the basic syntax.
+  \n\nRemember that all the code will be on the GitHub 'Intent-Superpowers' and 'Buttons' Links
         "
         android:id="@+id/textView4"
         android:layout_below="@+id/imageView4"
