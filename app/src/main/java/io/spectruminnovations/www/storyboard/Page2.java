@@ -1,9 +1,12 @@
 package io.spectruminnovations.www.storyboard;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class Page2 extends ActionBarActivity {
@@ -12,6 +15,19 @@ public class Page2 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
+
+
+        Button bob = (Button) findViewById(R.id.page_2_button);
+
+        bob.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                // write something to do if clicked below
+
+                Intent intent = new Intent(Page2.this, Page3.class );
+                startActivity(intent);
+            }
+
+        });
     }
 
 
