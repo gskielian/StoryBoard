@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.spectruminnovations.www.storyboard" >
 
+    <!-- add permissions below this line -->
+:
+    <uses-permission android:name="android.permission.SEND_SMS" />
+:
+
+    <!-- add permissions above this line -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -31,6 +37,10 @@
         <activity
             android:name=".Page4"
             android:label="@string/title_activity_page4" >
+        </activity>
+        <activity
+            android:name=".Page5"
+            android:label="@string/title_activity_page5" >
         </activity>
     </application>
 

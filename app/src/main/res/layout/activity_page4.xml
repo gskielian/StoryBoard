@@ -12,4 +12,34 @@
         android:id="@+id/imageView5"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@android:drawable/sym_action_chat"
+        android:minWidth="200dp"
+        android:minHeight="200dp"
+        android:layout_marginTop="88dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prepare SMS"
+        android:id="@+id/page_4_sms_button"
+        android:layout_below="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Page 5"
+        android:id="@+id/goto_page_5_button"
+        android:layout_below="@+id/page_4_sms_button"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
