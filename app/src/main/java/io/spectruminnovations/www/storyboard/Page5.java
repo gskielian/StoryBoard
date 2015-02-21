@@ -1,9 +1,13 @@
 package io.spectruminnovations.www.storyboard;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class Page5 extends ActionBarActivity {
@@ -12,6 +16,31 @@ public class Page5 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page5);
+
+
+        Button make_a_call_button = (Button) findViewById(R.id.call_button);
+
+        make_a_call_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                // write something to do if clicked below
+
+                String phoneNumber = "4153552838"; //replace with target number, no spaces
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNumber));
+                startActivity(intent);
+            }
+
+        });
+
+        Button next_page = (Button) findViewById(R.id.page_5_goto_next);
+
+        next_page.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+            // write something to do if clicked below
+            Intent intent = new Intent(Page5.this, Page1.class );
+            startActivity(intent);
+        }
+
+        });
     }
 
 
