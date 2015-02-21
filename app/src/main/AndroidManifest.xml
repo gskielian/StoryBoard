@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".Page1"
-            android:label="@string/title_activity_page_one" >
+            android:label="@string/title_activity_page1" >
         </activity>
         <activity
             android:name=".Page2"
@@ -27,6 +27,10 @@
         <activity
             android:name=".Page3"
             android:label="@string/title_activity_page3" >
+        </activity>
+        <activity
+            android:name=".Page4"
+            android:label="@string/title_activity_page4" >
         </activity>
     </application>
 
