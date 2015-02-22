@@ -13,8 +13,7 @@
         android:src="@drawable/website_example_1"
         android:layout_gravity="center_horizontal|top"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"

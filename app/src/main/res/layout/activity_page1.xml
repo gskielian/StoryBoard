@@ -37,9 +37,8 @@
         android:layout_height="wrap_content"
         android:text="go to Page 2"
         android:id="@+id/page_1_button"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
