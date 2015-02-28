@@ -13,15 +13,34 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/aatl"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/textView5"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TAP TO CONTIUE"
+        android:text="Level 1"
         android:id="@+id/title_button"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/level_2_button"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select Your Adventure"
+        android:id="@+id/textView5"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/title_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 2"
+        android:id="@+id/level_2_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/title_button"
+        android:layout_alignStart="@+id/title_button" />
 
 </RelativeLayout>

@@ -1,7 +1,6 @@
 package io.spectruminnovations.www.storyboard;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,44 +9,50 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class Page5 extends ActionBarActivity {
+public class Page_2_IntentPutExtra extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page5);
+        setContentView(R.layout.activity_page_2_intent_put_extra);
 
+        Button button_blue_black = (Button) findViewById(R.id.its_blue_and_black_button);
 
-        Button make_a_call_button = (Button) findViewById(R.id.call_button);
-
-        make_a_call_button.setOnClickListener(new View.OnClickListener() {
+        button_blue_black.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 // write something to do if clicked below
 
-                String phoneNumber = "6505551234"; //replace with target number, no spaces
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNumber));
+                Intent intent = new Intent(Page_2_IntentPutExtra.this, Page_3_IntentGetExtra_Example.class);
+                intent.putExtra("Choice", "Blue and Black");
+                intent.putExtra("SomeResponse", "Congratulations, you're right!");
+                //... you get the idea
                 startActivity(intent);
             }
-
         });
 
-        Button next_page = (Button) findViewById(R.id.page_5_goto_next);
+        Button button_white_gold = (Button) findViewById(R.id.its_white_and_gold_button);
 
-        next_page.setOnClickListener(new View.OnClickListener() {
+
+        button_white_gold.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-            // write something to do if clicked below
-            Intent intent = new Intent(Page5.this, Page1.class );
-            startActivity(intent);
-        }
+                // write something to do if clicked below
 
+                Intent intent = new Intent(Page_2_IntentPutExtra.this, Page_3_IntentGetExtra_Example.class);
+                intent.putExtra("Choice", "White and Gold");
+                intent.putExtra("SomeResponse", "You are wrong!");
+                //... you get the idea
+                startActivity(intent);
+            }
         });
+
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_page5, menu);
+        getMenuInflater().inflate(R.menu.menu_page_2_intent_put_extra, menu);
         return true;
     }
 
