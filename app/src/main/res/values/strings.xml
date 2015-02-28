@@ -9,4 +9,26 @@
     <string name="title_activity_page3">Page3</string>
     <string name="title_activity_page4">Page4</string>
     <string name="title_activity_page5">Page5</string>
+
+    <string name="title_activity_page_1__fullscreen">Page 1 - Fullscreen Activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_page_2__navigation_drawer">Page 2 - NavigationDrawer</string>
+
+
+
+
+    <string name="title_section1">Example Section 1</string>
+    <string name="title_section2">Example Section 2</string>
+    <string name="title_section3">Example Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_page_2__intent_put_extra">Page 2 - IntentPutExtra</string>
+    <string name="title_activity_page_3__intent_get_extra__example">Page 3 - IntentGetExtra
+        Example
+    </string>
+
 </resources>

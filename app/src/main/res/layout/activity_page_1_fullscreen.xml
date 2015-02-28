@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context="io.spectruminnovations.www.storyboard.Page_1_FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+        android:text="@string/dummy_content" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="#ff000000">
+
+        <ImageView
+            android:layout_width="592dp"
+            android:layout_height="666dp"
+            android:scaleType = "centerCrop"
+            android:id="@+id/imageView8"
+            android:src="@drawable/earth_public_domain"
+            android:layout_gravity="center"
+            android:cropToPadding="false"
+            android:backgroundTintMode="screen" />
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button android:id="@+id/button_to_page_2" style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Continue to Page 2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Immersive Imagery"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ffffffff"
+            android:translationZ="10dp"
+            android:textSize="24dp"
+            android:focusableInTouchMode="false"
+            android:backgroundTintMode="screen" />
+
+    </FrameLayout>
+
+</FrameLayout>

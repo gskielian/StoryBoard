@@ -7,6 +7,9 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <!-- add permissions above this line -->
     <application
         android:allowBackup="true"
@@ -41,6 +44,20 @@
         <activity
             android:name=".Page5"
             android:label="@string/title_activity_page5" >
+        </activity>
+        <activity
+            android:name=".Page_1_FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_page_1__fullscreen"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".Page_2_IntentPutExtra"
+            android:label="@string/title_activity_page_2__intent_put_extra" >
+        </activity>
+        <activity
+            android:name=".Page_3_IntentGetExtra_Example"
+            android:label="@string/title_activity_page_3__intent_get_extra__example" >
         </activity>
     </application>
 
